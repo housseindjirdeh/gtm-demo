@@ -1,0 +1,44 @@
+{
+  "rewrites": [
+    {
+      "source": "/proxytown/kompassify",
+      "destination": "https://player.kompassify.com/kompassifyPlayer.js"
+    },
+    {
+      "source": "/proxytown/kompassify-app",
+      "destination": "https://player.kompassify.app/kompassifyInstancePlayer.js?version=3.6.2"
+    },
+    {
+      "source": "/proxytown/krxd",
+      "destination": "https://cdn.krxd.net/controltag/123.js"
+    },
+    {
+      "source": "/proxytown/hyvor",
+      "destination": "https://talk.hyvor.com/web-api/embed.js"
+    }, 
+    {
+      "source": "/proxytown/pinterest",
+      "destination": "https://ct.pinterest.com/ct.html"
+    },
+    {
+      "source": "/proxytown/pushnews-ilabspush",
+      "destination": "https://cdn.pn.vg/push/ilabspush.min.js"
+    },
+    {
+      "source": "/proxytown/pushnews-sites",
+      "destination": "https://cdn.pn.vg/sites/e6b580c8-3ee0-4b14-8f16-5f33cb638bb3.js"
+    },
+    {
+      "source": "/proxytown/jovn",
+      "destination": "https://j.wovn.io/1?token=12345"
+    },
+    {
+      "source": "/proxytown/provesrc",
+      "destination": "https://cdn.provesrc.com/provesrc.js?apiKey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDkzMTJkZDVkYTc1NzE0NzI5NTM3YWMiLCJpYXQiOjE2ODczNjAyMjF9._ElKQkW-oLUb7Uy9gl1Iojj8UaE2gmvbhuMUFYDLYdU"
+    },
+    {
+      "source": "/proxytown/raptor",
+      "destination": "https://az19942.vo.msecnd.net/script/raptor-3.0.min.js"
+    }
+  ]
+}

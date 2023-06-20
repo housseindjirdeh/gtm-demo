@@ -2,14 +2,53 @@ import Script from "next/script";
 
 import { Html, Head, Main, NextScript } from "next/document";
 
+const siteUrl = "https://gtm-demo-two.vercel.app/proxytown";
+
 export default function Document() {
   return (
     <Html>
       <Head>
         <script
+          data-partytown-config
           dangerouslySetInnerHTML={{
             __html: `partytown = {
-              forward: ["dataLayer.push"]
+              lib: '/_next/static/~partytown/',
+              forward: ['dataLayer.push'],
+              resolveUrl: (url) => {
+                if (url.hostname === 'player.kompassify.com') {
+                  const proxyUrl = new URL('${siteUrl}/kompassify')
+                  return proxyUrl
+                } else if (url.hostname === 'player.kompassify.app') {
+                  const proxyUrl = new URL('${siteUrl}/kompassify-app')
+                  return proxyUrl
+                } else if (url.hostname === 'cdn.krxd.net') {
+                  const proxyUrl = new URL('${siteUrl}/krxd')
+                  return proxyUrl
+                } else if (url.hostname === 'talk.hyvor.com') {
+                  const proxyUrl = new URL('${siteUrl}/hyvor')
+                  return proxyUrl
+                } else if (url.hostname === 'ct.pinterest.com') {
+                  const proxyUrl = new URL('${siteUrl}/pinterest')
+                  return proxyUrl
+                } else if (url.hostname === 'cdn.pn.vg' && url.pathname.includes('ilabspush')) {
+                  const proxyUrl = new URL('${siteUrl}/pushnews-ilabspush')
+                  return proxyUrl
+                } else if (url.hostname === 'cdn.pn.vg' && url.pathname.includes('sites')) {
+                  const proxyUrl = new URL('${siteUrl}/pushnews-sites')
+                  return proxyUrl
+                } else if (url.hostname === 'j.wovn.io') {
+                  const proxyUrl = new URL('${siteUrl}/jovn')
+                  return proxyUrl
+                } else if (url.hostname === 'cdn.provesrc.com') {
+                  const proxyUrl = new URL('${siteUrl}/provesrc')
+                  return proxyUrl
+                } else if (url.hostname === 'az19942.vo.msecnd.net') {
+                  const proxyUrl = new URL('${siteUrl}/raptor')
+                  return proxyUrl
+                }
+
+                return url
+              }
             };`,
           }}
         ></script>
