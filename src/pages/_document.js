@@ -17,7 +17,7 @@ export default function Document() {
               resolveUrl: (url) => {
                 if (url.hostname === 'player.kompassify.com') {
                   const proxyUrl = new URL('${siteUrl}/kompassify')
-                  return proxyUrl
+                  return proxyUrl;
                 } else if (url.hostname === 'player.kompassify.app') {
                   const proxyUrl = new URL('${siteUrl}/kompassify-app')
                   return proxyUrl
@@ -47,7 +47,7 @@ export default function Document() {
                   return proxyUrl
                 }
 
-                return url
+                return url;
               }
             };`,
           }}
