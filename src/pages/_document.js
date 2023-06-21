@@ -21,6 +21,12 @@ export default function Document() {
                 } else if (url.hostname === 'player.kompassify.app') {
                   const proxyUrl = new URL('${siteUrl}/kompassify-app')
                   return proxyUrl
+                } else if (url.href.includes('dist/bundle.js?v=8.2.4')) {
+                  const proxyUrl = new URL('${siteUrl}/kompassify-boot-loader')
+                  return proxyUrl
+                } else if (url.hostname === 'boot-loader.kompassify.app') {
+                  const proxyUrl = new URL('${siteUrl}/kompassify-boot-loader-uuid')
+                  return proxyUrl
                 } else if (url.hostname === 'cdn.krxd.net') {
                   const proxyUrl = new URL('${siteUrl}/krxd')
                   return proxyUrl
@@ -36,11 +42,20 @@ export default function Document() {
                 } else if (url.hostname === 'cdn.pn.vg' && url.pathname.includes('sites')) {
                   const proxyUrl = new URL('${siteUrl}/pushnews-sites')
                   return proxyUrl
+                } else if (url.hostname === 'cdn.pn.vg' && url.pathname.includes('PushnewsSubscriptionSDK')) {
+                  const proxyUrl = new URL('${siteUrl}/pushnews-subscription')
+                  return proxyUrl
                 } else if (url.hostname === 'j.wovn.io') {
                   const proxyUrl = new URL('${siteUrl}/jovn')
                   return proxyUrl
                 } else if (url.hostname === 'cdn.provesrc.com') {
                   const proxyUrl = new URL('${siteUrl}/provesrc')
+                  return proxyUrl
+                } else if (url.hostname === 'client-api.provesrc.com' && url.pathname.includes('account')) {
+                  const proxyUrl = new URL('${siteUrl}/provesrc-client')
+                  return proxyUrl
+                } else if (url.hostname === 'client-api.provesrc.com' && url.pathname.includes('notifications')) {
+                  const proxyUrl = new URL('${siteUrl}/provesrc-client-notifications')
                   return proxyUrl
                 } else if (url.hostname === 'az19942.vo.msecnd.net') {
                   const proxyUrl = new URL('${siteUrl}/raptor')
@@ -61,10 +76,10 @@ export default function Document() {
           strategy="worker"
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-NGLHBGB');`,
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-NGLHBGB');`,
           }}
         />
         <noscript>

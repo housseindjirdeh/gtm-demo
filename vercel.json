@@ -9,6 +9,14 @@
       "destination": "https://player.kompassify.app/kompassifyInstancePlayer.js?version=3.6.2"
     },
     {
+      "source": "/proxytown/kompassify-boot-loader",
+      "destination": "https://boot-loader.kompassify.app/dist/bundle.js?v=8.2.4"
+    },
+    {
+      "source": "/proxytown/kompassify-boot-loader-uuid",
+      "destination": "https://boot-loader.kompassify.app/?groupUuid=123&refresh=1687368843728"
+    },
+    {
       "source": "/proxytown/krxd",
       "destination": "https://cdn.krxd.net/controltag/123.js"
     },
@@ -25,8 +33,16 @@
       "destination": "https://cdn.pn.vg/push/ilabspush.min.js"
     },
     {
+      "source": "/pushnews-sw.js",
+      "destination": "https://cdn.pn.vg/push/pushnews-sw.js"
+    },
+    {
       "source": "/proxytown/pushnews-sites",
       "destination": "https://cdn.pn.vg/sites/e6b580c8-3ee0-4b14-8f16-5f33cb638bb3.js"
+    },
+    {
+      "source": "/proxytown/pushnews-subscription",
+      "destination": "https://cdn.pn.vg/push/PushnewsSubscriptionSDK.js"
     },
     {
       "source": "/proxytown/jovn",
@@ -35,6 +51,14 @@
     {
       "source": "/proxytown/provesrc",
       "destination": "https://cdn.provesrc.com/provesrc.js?apiKey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDkzMTJkZDVkYTc1NzE0NzI5NTM3YWMiLCJpYXQiOjE2ODczNjAyMjF9._ElKQkW-oLUb7Uy9gl1Iojj8UaE2gmvbhuMUFYDLYdU"
+    },
+    {
+      "source": "/proxytown/provesrc-client",
+      "destination": "https://client-api.provesrc.com/account/configuration?url=aHR0cHM6Ly9ndG0tZGVtby10d28udmVyY2VsLmFwcC8="
+    },
+    {
+      "source": "/proxytown/provesrc-client-notifications",
+      "destination": "https://client-api.provesrc.com/notifications/get"
     },
     {
       "source": "/proxytown/raptor",
